@@ -11,4 +11,4 @@ build:
 release:
   image: web
   command:
-    - docker-compose -f docker-compose.yml up
+    - python manage.py runserver
