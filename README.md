@@ -14,3 +14,9 @@ http://127.0.0.1:8000/admin/ ---> админка в которой нужно с
 
 
 http://127.0.0.1:8000/film_translate/ -------> ссылка на само апи при запуске локально
+
+
+
+heroku:
+
+https://thawing-everglades-53884.herokuapp.com/ | https://git.heroku.com/thawing-everglades-53884.git
