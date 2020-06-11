@@ -25,7 +25,7 @@ SECRET_KEY = 'b5z2#11)wrzpfq52pnbqso$c40pxffveftli+zv3+0-49azq5-'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['thawing-everglades-53884.herokuapp.com/', '127.0.0.1']
 
 
 # Application definition

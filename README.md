@@ -20,3 +20,4 @@ http://127.0.0.1:8000/film_translate/ -------> ссылка на само апи
 heroku:
 
 https://thawing-everglades-53884.herokuapp.com/ | https://git.heroku.com/thawing-everglades-53884.git
+    

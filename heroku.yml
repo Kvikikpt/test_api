@@ -1,19 +1,14 @@
-version: '3'
+setup:
+  addons:
+  - plan: heroku-postgresql
+    as: DATABASE
 
-services:
-  db:
-    image: postgres
-    environment:
-      - POSTGRES_DB=postgres
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgres
-  web:
-    build: .
-    container_name: api_test
-    command: python manage.py runserver 0.0.0.0:8000
-    volumes:
-      - .:/code
-    ports:
-      - "8000:8000"
-    depends_on:
-      - db
+build:
+  docker:
+    web: Dockerfile
+
+
+release:
+  image: web
+  command:
+    - docker-compose -f docker-compose.yml up
